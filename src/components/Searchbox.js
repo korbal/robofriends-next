@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 
-const Searchbox = ({searchValue, setSearchValue}) => {
+const Searchbox = ({setSearchValue}) => {
   
   console.log(searchValue)
     return (
-    <input type="text" value={searchValue} 
-    onChange = {(e) => setSearchValue(e.target.value)}/>
+    <input 
+      type="text" 
+      onChange = {(e) => setSearchValue(e.target.value)}
+    />
   );
 };
 

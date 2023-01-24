@@ -2,9 +2,9 @@ import Card from "./Card";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const Cardlist = ({ robots, searchValue, setSearchValue }) => {
+const Cardlist = ({ robots, searchValue}) => {
 const [filteredRobots, setFilteredRobots] = useState(robots);
-//const [searchValue, setSearchValue] = useState('');
+
 
 useEffect(() => {
   if (robots) {
