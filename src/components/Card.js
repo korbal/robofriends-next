@@ -1,3 +1,4 @@
+// receiving props from CardList.js to render the card itself. the src url is using the id to generate a random image for each card.
 const Card = (props) => {
   const {name, email, id} = props;
   return(
